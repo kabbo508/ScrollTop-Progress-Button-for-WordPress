@@ -1,0 +1,75 @@
+.stpb-admin-grid{
+	display: grid;
+	grid-template-columns: 1.2fr .8fr;
+	gap: 18px;
+	margin-top: 14px;
+}
+@media (max-width: 1100px){
+	.stpb-admin-grid{ grid-template-columns: 1fr; }
+}
+.stpb-admin-card{
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 10px;
+	padding: 16px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+.stpb-preview-area{
+	padding: 18px;
+	border: 1px dashed #c3c4c7;
+	border-radius: 10px;
+	background: #f6f7f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 220px;
+}
+.stpb-preview .stpb-btn{
+	width: 56px;
+	height: 56px;
+	border-radius: 999px;
+	border: 0;
+	cursor: default;
+	position: relative;
+	display: grid;
+	place-items: center;
+	box-shadow: 0 8px 24px rgba(0,0,0,.18);
+	background: inherit !important;
+	color: inherit !important;
+}
+.stpb-preview .stpb-btn i{
+	font-size: 18px;
+	line-height: 1;
+	color: inherit !important;
+}
+.stpb-preview .stpb-ring{
+	position: absolute;
+	inset: -5px;
+	width: calc(100% + 10px);
+	height: calc(100% + 10px);
+	pointer-events: none;
+}
+.stpb-preview .stpb-ring circle{ fill: none; stroke-width: 4; }
+.stpb-preview .stpb-ring .progress{
+	stroke-linecap: round;
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+	stroke-dasharray: 327 327;
+	stroke-dashoffset: 120;
+}
+.stpb-icon-picker{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.stpb-icon-preview{
+	width: 42px;
+	height: 42px;
+	border-radius: 10px;
+	border: 1px solid #dcdcde;
+	display: grid;
+	place-items: center;
+	background: #fff;
+}
+.stpb-icon-preview i{ font-size: 18px; }
